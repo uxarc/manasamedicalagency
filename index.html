@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manasa Medical Agency | Jakkali Gopi, Novostart Distributor</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- Custom Color Palette (coolors.co) --- */
+        :root {
+            --c-primary: #05668d;     /* Deep Blue - Trust, Primary Brand Color */
+            --c-accent-dark: #028090; /* Strong Teal - Secondary Brand Color */
+            --c-secondary: #00a896;   /* Mint Green - Accent, Headers */
+            --c-cta: #02c39a;         /* Bright Green/Cyan - Key Call to Action */
+            --c-background: #f0f3bd;  /* Light Cream/Yellow - Clean Body Background */
+            --c-text: #2c3e50;        /* Dark Professional Text */
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--c-background);
+            color: var(--c-text);
+        }
+
+        /* Enforce high-impact, bold styling for main headings */
+        .heading-font {
+            font-weight: 900;
+            letter-spacing: -0.05em; 
+        }
+
+        /* Utility Classes based on Variables */
+        .bg-primary { background-color: var(--c-primary); }
+        .text-primary { color: var(--c-primary); }
+        .bg-secondary { background-color: var(--c-secondary); }
+        .text-secondary { color: var(--c-secondary); }
+        .bg-cta { background-color: var(--c-cta); }
+        .shadow-trust {
+            box-shadow: 0 15px 30px -10px rgba(5, 102, 141, 0.4);
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': 'var(--c-primary)',
+                        'secondary': 'var(--c-secondary)',
+                        'accent-dark': 'var(--c-accent-dark)',
+                        'cta': 'var(--c-cta)',
+                        'bg-light': 'var(--c-background)',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="min-h-screen antialiased">
+
+    <!-- Main App Container -->
+    <div id="app" class="relative">
+
+        <!-- Header/Navigation Bar -->
+        <header class="bg-white shadow-lg sticky top-0 z-50">
+            <div class="max-w-7xl mx-auto p-4 flex justify-between items-center px-4 sm:px-6 lg:px-8">
+                
+                <!-- Logo -->
+                <div class="flex items-baseline">
+                    <h1 class="text-3xl md:text-4xl heading-font text-primary leading-none">MANASA</h1>
+                    <p class="text-base font-light text-accent-dark ml-2 tracking-wide hidden sm:block">MEDICAL AGENCY</p>
+                </div>
+
+                <!-- Primary CTA - ALWAYS ALIGNED AND VISIBLE -->
+                <a href="tel:9100339623" class="bg-cta text-white px-3 py-1 md:px-5 md:py-2 text-base md:text-lg font-bold rounded-full shadow-md hover:bg-secondary transition-colors flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.2c.28-.28.36-.67.24-1.02C8.75 7.45 8.55 6.25 8.55 5c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-1-1z"/></svg>
+                    <span class="hidden sm:inline">9100339623</span>
+                    <span class="sm:hidden">Call Now</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- 1. HERO SECTION: Perfectly Centered and Aligned Content -->
+        <section class="bg-black pt-16 pb-24 relative rounded-b-[4rem] shadow-trust overflow-hidden text-center">
+            
+            <!-- Abstract background pattern for visual depth -->
+            <div class="absolute inset-0 opacity-40" style="background-image: url('https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg'); background-size: cover; background-position: center;"></div>
+            
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <p class="text-lg md:text-xl font-medium text-secondary mb-3">WELCOME TO</p>
+                
+                <!-- Main Partner Logo/Name -->
+                <a href="https://www.novostartlifesciences.com/" target="_blank" class="inline-block transition-transform transform hover:scale-[1.02]">
+                    <h2 class="text-5xl sm:text-7xl lg:text-8xl heading-font text-white leading-tight mb-4 drop-shadow-lg">
+                        MANASA MEDICAL AGENCY
+                    </h2>
+                </a>
+                
+                <p class="text-xl md:text-2xl text-bg-light font-light mb-12 max-w-3xl mx-auto">
+                    Manasa Medical Agency ensures the most reliable supply chain, delivered with integrity and urgency to healthcare providers.
+                </p>
+
+                <!-- Proprietor & Main CTA Block - Perfect Inline Block Centering -->
+                <div class="p-6 md:p-8 bg-accent-dark rounded-xl inline-block shadow-2xl max-w-full">
+                    <p class="text-base md:text-lg font-semibold text-bg-light mb-1">PROPRIETOR:</p>
+                    <h3 class="text-3xl md:text-4xl heading-font text-white mb-4">JAKKALI GOPI</h3>
+                    
+                    <a href="tel:9100339623" class="bg-cta text-primary px-6 py-3 md:px-10 md:py-4 text-xl md:text-2xl font-black rounded-lg shadow-trust hover:text-primary bg-white transition-all transform hover:scale-105 inline-flex items-center space-x-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.2c.28-.28.36-.67.24-1.02C8.75 7.45 8.55 6.25 8.55 5c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-1-1z"/></svg>
+                        <span>CALL GOPI FOR ORDERS: 9100339623</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 2. PRODUCT SHOWCASE: Fluid Responsive Grid -->
+        <section class="max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8" id="products">
+            <h3 class="text-4xl md:text-5xl heading-font text-center text-primary mb-4">OUR DISTRIBUTION FOCUS</h3>
+            <p class="text-lg text-center text-accent-dark font-light mb-12">
+                We manage the full portfolio of essential and specialized Novostart medications.
+            </p>
+            
+            <!-- Grid Layout: 1 column on mobile, 3 columns on desktop -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Product Card 1: Sterile Solutions -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-trust transition-shadow duration-300">
+                    <div class="h-48 md:h-64 bg-cover bg-center" 
+                         style="background-image: url('https://images.pexels.com/photos/10187145/pexels-photo-10187145.jpeg');">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl md:text-2xl heading-font text-secondary mb-2">Sterile Solutions</h4>
+                        <p class="text-sm">Vials, ampoules, and pre-filled syringes requiring secure, cold-chain logistics.</p>
+                    </div>
+                </div>
+                
+                <!-- Product Card 2: Solid Dosage -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-trust transition-shadow duration-300">
+                    <div class="h-48 md:h-64 bg-cover bg-center"
+                         style="background-image: url('https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg');">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl md:text-2xl heading-font text-secondary mb-2">Tablets & Capsules</h4>
+                        <p class="text-sm">High-volume orders of oral medication with strict inventory and quality management.</p>
+                    </div>
+                </div>
+                
+                <!-- Product Card 3: Efficient Supply -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-trust transition-shadow duration-300">
+                    <div class="h-48 md:h-64 bg-cover bg-center"
+                         style="background-image: url('https://images.pexels.com/photos/6994138/pexels-photo-6994138.jpeg');">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl md:text-2xl heading-font text-secondary mb-2">Supply Chain Logistics</h4>
+                        <p class="text-sm">We ensure rapid delivery to retail shops through optimized warehousing and bulk distribution..</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. LOCATION & CONTACT: Two-Column Responsive Layout -->
+        <section class="bg-white py-16 px-4 border-t-8 border-secondary" id="location">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12 px-4 sm:px-6 lg:px-8">
+                
+                <!-- Column 1: Direct Contact (Stacked Mobile, Left Aligned Desktop) -->
+                <div class="lg:col-span-1 space-y-4">
+                    <h3 class="text-3xl md:text-4xl heading-font text-primary mb-6">CONTACT & ORDERS</h3>
+                    
+                    <p class="text-lg">
+                        For immediate service or to initiate a new distribution agreement:
+                    </p>
+                    
+                    <p class="text-xl font-bold text-accent-dark">Proprietor:</p>
+                    <p class="text-2xl font-bold text-primary">Jakkali Gopi</p>
+                    
+                    <a href="tel:9100339623" class="text-4xl heading-font text-cta hover:text-accent-dark transition-colors block">
+                        9100339623
+                    </a>
+
+                    <a href="https://www.novostartlifesciences.com/" target="_blank"
+                       class="inline-block bg-primary text-white px-6 py-3 rounded-lg font-bold hover:bg-accent-dark transition-colors mt-4">
+                        Visit Novostart Website &rarr;
+                    </a>
+                </div>
+
+                <!-- Column 2 & 3: Map and Address (Full Width Mobile, Wide Column Desktop) -->
+                <div class="lg:col-span-2">
+                    <h3 class="text-3xl md:text-4xl heading-font text-primary mb-6">OFFICE LOCATION</h3>
+                    
+                    <a href="https://maps.app.goo.gl/BSzNSTyK676fQ3du5" target="_blank"
+                       class="inline-block bg-cta text-white px-6 py-3 rounded-lg font-bold hover:bg-secondary transition-colors mb-4">
+                        OPEN DIRECTIONS ON GOOGLE MAPS
+                    </a>
+
+                    <div class="w-full h-80 md:h-96 bg-gray-100 rounded-xl shadow-inner border border-gray-300 overflow-hidden">
+                        <!-- Embedded map using the exact address for the pin -->
+                        <iframe width="100%" height="100%" frameborder="0" style="border:0"
+                            src="https://maps.google.com/maps?q=17.06015,79.52906&hl=en&z=14&t=k&output=embed"
+                            allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+
+                    <p class="mt-4 text-sm text-gray-600">
+                        *Map pin points to the exact office location.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer - Aligned and Minimal -->
+        <footer class="text-center text-text py-8 bg-bg-light">
+            <p class="font-bold text-lg">MANASA MEDICAL AGENCY | Proprietor Jakkali Gopi</p>
+            <p class="text-sm mt-1 text-gray-600">&copy; 2025 All Rights Reserved. Official Distributor for Novostart Lifesciences.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
